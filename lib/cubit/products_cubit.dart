@@ -1,9 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-
-import '../products_model/products_Model.dart';
+import '../products_model/products_model.dart';
 import '../sevices/services.dart';
-
 part 'products_state.dart';
 
 class ProductsCubit extends Cubit<ProductsState> {

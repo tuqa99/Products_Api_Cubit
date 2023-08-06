@@ -12,11 +12,12 @@ class ProductsInitial extends ProductsState {
   List<Object> get props => [];
 }
 
+// ignore: must_be_immutable
 class ProductsLoding extends ProductsState {
   bool isLoaded = false;
   @override
   List<Object> get props => [isLoaded];
-  ProductsLoding(this.isLoaded);
+  ProductsLoding({required this.isLoaded});
 }
 
 class ProductSloded extends ProductsState {
@@ -27,9 +28,9 @@ class ProductSloded extends ProductsState {
 }
 
 class ProductsError extends ProductsState {
-  String message;
+  final String message;
 
-  ProductsError({required this.message});
+  const ProductsError({required this.message});
 
   @override
   List<Object> get props => [message];

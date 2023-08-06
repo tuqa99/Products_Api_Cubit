@@ -35,7 +35,7 @@ class _HomeState extends State<Home> {
                 state.message.toString(),
               ),
             );
-          } else if (state is productsloded) {
+          } else if (state is ProductSloded) {
             return GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
@@ -59,7 +59,7 @@ class _HomeState extends State<Home> {
                           width: 180,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(15),
-                              color: Color.fromARGB(255, 243, 237, 237)),
+                              color: const Color.fromARGB(255, 243, 237, 237)),
                           child: Image.network(productsModel.image.toString()),
                         ),
                       ),
